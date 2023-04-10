@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { Coordinates } from '../../types/store';
 import { NaverMap } from '../../types/map';
 import { INITIAL_CENTER, INITIAL_ZOOM } from '../../hooks/useMap';
+import mapStyles from '../../styles/map.module.scss';
 
 type Props = {
   mapId?: string;
@@ -54,7 +55,12 @@ const Map = ({
         src={`https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NEXT_PUBLIC_NCP_CLIENT_ID}`}
         onReady={initializeMap} //mount될때마다 지도를 부르기 위해 실행 (OnLoad의 경우 처음 한번만 실행된다.)
       />
-      <div id={mapId} style={{ width: '100%', height: '100%' }} />
+      {/* 맵 생성 */}
+      <div
+        id={mapId}
+        style={{ width: '100%', height: '100%' }}
+        className={mapStyles.map}
+      />
     </>
   );
 };
