@@ -21,14 +21,7 @@ const DetailContent = ({ currentStore, expanded }: Props) => {
             style={{ position: 'relative', maxWidth: 120, height: 80 }}
             key={image}
           >
-            <Image
-              src={image}
-              alt=""
-              fill
-              style={{ objectFit: 'cover' }}
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO0WhFsDwADzwF2mLYSJgAAAABJRU5ErkJggg=="
-            />
+            <Image src={image} alt="" fill style={{ objectFit: 'cover' }} />
           </div>
         ))}
       </div>
