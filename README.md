@@ -23,10 +23,13 @@
 
 
 2. 토글 버튼을 누르면 상세 페이지 확인 가능
-<img width="500" alt="스크린샷 2023-04-11 21 38 53" src="https://user-images.githubusercontent.com/111356420/231167835-50fe11e8-2945-49d9-b8b8-0052e81342e0.png">
+<img width="500" alt="스크린샷 2023-04-11 21 38 53" src="https://user-images.githubusercontent.com/111356420/231175244-5e71c4af-a562-4147-8e8d-6b93a7ee7cad.png">
+
 
 3.마음에 드는 상점들의 정보, 위치 복사가능(gif)
-![화면_기록_2023-04-11_21_53_14_AdobeExpress](https://user-images.githubusercontent.com/111356420/231172281-606f4685-47d7-45cf-9738-ea056784cba1.gif)
+<br>
+
+<img width="300" src="https://user-images.githubusercontent.com/111356420/231172281-606f4685-47d7-45cf-9738-ea056784cba1.gif"/>
 
 
 
