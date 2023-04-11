@@ -38,7 +38,9 @@ export default Home;
 
 export async function getStaticProps() {
   //routes이용해서 가져와보기
-  const stores = (await import('../public/stores.json')).default;
+  const stores = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/store`
+  ).then((response) => response.json());
 
   return {
     props: { stores },
