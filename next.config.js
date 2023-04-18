@@ -2,7 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['next-store-six.vercel.app', 'search.pstatic.net'],
+    domains: ['lecture-1.vercel.app', 'search.pstatic.net'],
+  },
+  i18n: {
+    locales: ['ko'],
+    defaultLocale: 'ko',
   },
 };
 

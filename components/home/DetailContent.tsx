@@ -21,7 +21,13 @@ const DetailContent = ({ currentStore, expanded }: Props) => {
             style={{ position: 'relative', maxWidth: 120, height: 80 }}
             key={image}
           >
-            <Image src={image} alt="" fill style={{ objectFit: 'cover' }} />
+            <Image
+              src={image}
+              alt=""
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="120px" //성능 최적
+            />
           </div>
         ))}
       </div>
