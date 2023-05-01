@@ -31,7 +31,9 @@
 <img width="300" src="https://user-images.githubusercontent.com/111356420/231172281-606f4685-47d7-45cf-9738-ea056784cba1.gif"/>
 
 4.피드백 페이지
-<img width="500" alt="스크린샷" src="https://user-images.githubusercontent.com/111356420/235421607-cf4e78b2-a7c7-4a38-a916-2167ec3d95f9.png"/>
+<br>
+
+<img width="200" alt="스크린샷" src="https://user-images.githubusercontent.com/111356420/235421607-cf4e78b2-a7c7-4a38-a916-2167ec3d95f9.png"/>
 파이어베이스 연결로 피드백 입력 시 데이터 저장
 
 
