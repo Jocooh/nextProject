@@ -1,8 +1,16 @@
 import { Fragment } from 'react';
+import { GetServerSideProps, NextPage } from 'next';
 import Header from '../components/common/Header';
 import { NextSeo } from 'next-seo';
+import type { Feedback } from '../types/feedback';
+import FeedbackSection from '../components/feedback/FeedbackSection';
+import { getFeedbackListFromFirestore } from '../firebase/feedback';
 
-export default function Feedback() {
+interface Props {
+  initialFeedbackList: Feedback[];
+}
+
+export const FeedbackPage: NextPage<Props> = ({ initialFeedbackList }) => {
   return (
     <Fragment>
       {/* 각페이지마다 들어가면 브라우저의 title이 바뀌는 것을 확인가능 */}
@@ -11,7 +19,26 @@ export default function Feedback() {
         description="매장 지도 서비스에 대한 피드백을 받습니다."
       />
       <Header />
-      <main></main>
+      <main
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: '100%',
+          overflow: 'hidden',
+          touchAction: 'pinch-zoom',
+        }}
+      >
+        <FeedbackSection initialFeedbackList={initialFeedbackList} />
+      </main>
     </Fragment>
   );
-}
+};
+export default FeedbackPage;
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {
+      initialFeedbackList: await getFeedbackListFromFirestore(),
+    },
+  };
+};
